@@ -11,7 +11,7 @@ export function getApiErrorInfo(error: unknown): ApiErrorInfo {
     if (status === 400 && data?.fields) {
       return { message: 'Verifica los campos del formulario.', fields: data.fields }
     }
-    if (status === 409 && data?.message) {
+    if (data?.message) {
       return { message: data.message, fields: null }
     }
   }
