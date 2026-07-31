@@ -12,8 +12,8 @@ export interface Libro {
   id: number
   titulo: string
   isbn: string
-  edicion: string
-  fechaPublicacion: string
+  edicion: string | null
+  fechaPublicacion: string | null
   autor: string
   cantidadEjemplares: number
 }
