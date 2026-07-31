@@ -47,7 +47,3 @@ Para desarrollo local sin Docker: copiar `.env.example` a `.env`, ajustar `VITE_
 - `Dockerfile` — build multi-stage (Node 20 Alpine → Nginx Alpine).
 - `nginx.conf` — servidor Nginx con fallback SPA para React Router.
 - `docker-compose.yml` — servicio `frontend` expuesto en el puerto `5173`.
-
-## Nota
-
-Este proyecto no incluye referencias ni marcas específicas de ninguna empresa u organización; es un entregable técnico genérico.
