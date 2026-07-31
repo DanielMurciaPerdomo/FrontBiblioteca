@@ -1,0 +1,13 @@
+.nav-tab-active {
+  background-color: #eff6ff;
+}
+
+.btn-link.text-primary:hover {
+  background-color: #eff6ff;
+  color: #1d4ed8 !important;
+}
+
+.btn-link.text-danger:hover {
+  background-color: #fef2f2;
+  color: #b91c1c !important;
+}

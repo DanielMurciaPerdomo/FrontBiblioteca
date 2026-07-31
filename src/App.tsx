@@ -1,9 +1,22 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import Navbar from './components/common/Navbar'
+import UsuariosPage from './pages/UsuariosPage'
+import LibrosPage from './pages/LibrosPage'
+import PrestamosPage from './pages/PrestamosPage'
+
 function App() {
   return (
-    <div className="container mt-4">
-      <h1 className="fw-bold mb-4">Sistema de Gestión de Biblioteca</h1>
-      <p className="text-muted">Frontend en construcción. Sección principal próximamente.</p>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <main className="container py-5" style={{ maxWidth: '1152px' }}>
+        <Routes>
+          <Route path="/usuarios" element={<UsuariosPage />} />
+          <Route path="/libros" element={<LibrosPage />} />
+          <Route path="/prestamos" element={<PrestamosPage />} />
+          <Route path="*" element={<Navigate to="/usuarios" />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   )
 }
 
