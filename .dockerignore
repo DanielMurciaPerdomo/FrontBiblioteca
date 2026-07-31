@@ -1,0 +1,15 @@
+# Dependencias y builds locales
+node_modules
+dist
+.env
+.env.*
+
+# Git
+.git
+.gitignore
+
+# Documentación y archivos de desarrollo que no van al build
+*.md
+Dockerfile
+docker-compose.yml
+.dockerignore
